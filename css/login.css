@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.login-cover{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	display: none;
+}
+
+.Box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: 420px;
+	box-sizing: border-box;
+	border-radius:10px;
+	background: rgba(255, 255, 255, 1);
+}
+
+.Box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: rgba(255, 255, 255, 0);
+	text-align: center;
+}
+
+.Box .input-group {
+	width: 300px;
+	height: 42px;
+	left: 50px;
+	top: 70px;
+}
+.Box .input-group1{
+	margin-top: 20px;
+}
+.Box .input-group .form-control{
+	height: 40px;
+}
+
+.Box .input-group .input-group-addon{
+	top: -0.5px;
+}
+.login-cover .login-cover-btn{
+	top: 30px;
+	margin-left: 28px;
+}
+.login-cover .login-cover-btn .btn {
+	position: absolute;
+	border: none;
+	color: #FFFFFF;
+	background-color: #46B8DA;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	top: 290px;
+	width: 150px;
+}
+.login-cover .login-cover-btn .btn-1{
+	margin-left: 200px;
+}
+.login-cover .login-cover-btn .btn:hover{
+	background-color: #08A1EF;
+}
+.logo{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: -150px;
+}
+.logo img{
+	width: 400px;
+	height: 100px;
+}
+.login-cover svg{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: -230px;
+	margin-left: 230px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	cursor: pointer;
+}

@@ -1,0 +1,32 @@
+canvas{
+	border: 1px solid #000000;
+	transform: scale(0.8);
+}
+.details-mode{
+	
+}
+.details-mode li{
+	list-style: none;
+	margin-top: 20px;
+}
+.details-mode img{
+	width: 200px;
+}
+.details-view{
+	position: absolute;
+	right: -80px;
+}
+.details-view li{
+	list-style: none;
+	margin-top: 20px;
+}
+.details-view input{
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	border:1px solid #D4D4D4;
+	margin-left: 50px;
+}
+.btn{
+	margin-top: 20px;
+}

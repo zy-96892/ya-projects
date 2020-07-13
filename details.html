@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>playbill</title>
+
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon"  href="img/favicon.ico"/>
+	<link rel="stylesheet" href="css/details-canvas.css" />
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 details-mode">
+				<ul>
+					<li>例子展示</li>
+					<li>
+						<img src="img/example2.5d1bd224.jpg"/>
+					</li>
+					<li>
+						<img src="img/example1.a4fb1911.jpg"/>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<canvas id="myCanvas" width="500" height="700"></canvas>
+			</div>
+			<div class="col-sm-4 details-view">
+					<!-- 背景图片 -->
+					<ul>
+						<li>
+							<label>背景图片</label><input id="url"/>
+						</li>
+						<li>
+							<label>图片宽度:</label><input id="imgwidth" />
+						</li>
+						<li>
+							<label>图片高度:</label><input id="imgheight" />
+						</li>
+						<!-- logo -->
+						<li>
+							<label>二维码图:</label><input id="logourl" />
+						</li>
+						<li>
+							<label>logo宽度:</label><input id="logowidth" />
+						</li>
+						<li>
+							<label>logo高度:</label><input id="logoheight" />
+						</li>
+						<!-- 标题 -->
+						<li>
+							<label>标题内容:</label><input id="title-text" />
+						</li>
+						<!-- 描述 -->
+						<li>
+							<label>文字内容:</label><input id="text" />
+						</li>
+						<li>
+							<label>字体颜色:</label><input id="color" />
+						</li>
+						
+						<!-- 联系方式 -->
+						<li>
+							<label>联系方式:</label><input id="call" />
+						</li>
+					</ul>
+				<input class="btn" type="button" id="btn" value="保存"/>
+				<input class="btn" type="button" value="保存png图片" id="btn1" />
+				<input class="btn" type="button" value="保存jpg图片" id="btn2" />
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/details.js"></script>
+
+	<!-- <canvas id="canvas1"></canvas>
+	    <br /><br />
+	    <input type="button" value="保存png图片" id="btn1" />
+	    <input type="button" value="保存jpg图片" id="btn2" />
+	<script>
+		//绘制图片
+		var canvas = document.getElementById('canvas1');
+		var ctx = canvas.getContext('2d');
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		ctx.fillStyle = "red";
+		ctx.font = 'italic bold 30px Helvetica ';
+		ctx.fillText('楷体', 50, 50);
+		//绑定下载事件
+		var btn = document.getElementById('btn1');
+		btn.onclick = function () {
+		    var type = 'png';
+		    download(type);
+		}
+		document.getElementById('btn2').onclick = function () {
+		    var type = 'jpg';
+		    download(type);
+		}
+		//图片下载操作,指定图片类型
+		function download(type) {
+		    //设置保存图片的类型
+		    var imgdata = canvas.toDataURL(type);
+		    //将mime-type改为image/octet-stream,强制让浏览器下载
+		    var fixtype = function (type) {
+		        type = type.toLocaleLowerCase().replace(/jpg/i, 'jpeg');
+		        var r = type.match(/png|jpeg|bmp|gif/)[0];
+		        return 'image/' + r;
+		    }
+		    imgdata = imgdata.replace(fixtype(type), 'image/octet-stream')
+		    //将图片保存到本地
+		    var saveFile = function (data, filename) {
+		        var link = document.createElement('a');
+		        link.href = data;
+		        link.download = filename;
+		        var event = document.createEvent('MouseEvents');
+		        event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+		        link.dispatchEvent(event);
+		    }
+		    var filename = new Date().toLocaleDateString() + '.' + type;
+		    saveFile(imgdata, filename);
+		}
+	</script> -->
+  </body>
+ </html>

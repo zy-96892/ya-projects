@@ -1,0 +1,240 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="/painter-custom-poster/favicon.ico">
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+		<meta name="theme-color" content="#000000">
+		<title>bian ji</title>
+		<link href="css/2.c18894aa.chunk.css" rel="stylesheet" />
+		<link href="css/main.dbaab7cf.chunk.css" rel="stylesheet" />
+		<link href="css/canvas.css" rel="stylesheet" />
+	</head>
+	<body><noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root">
+			<div>
+				<div id="main">
+					<div class="example">
+						<div class="example-header">
+							<div class="example-header-h3">例子展示</div>
+						</div>
+						<div class="ul">
+							<div class="li li-1"><img src="img/example1.a4fb1911.jpg" alt=""></div>
+							<div class="li li-2"><img src="img/example2.5d1bd224.jpg" alt=""></div>
+							<div class="li li-3"><img src="img/example3.f37953c1.jpg" alt=""></div>
+							<div class="li li-4"><img src="img/example4.4706abbd.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="canvas-container" style="width: 654px; height: 1000px; position: relative; user-select: none;"><canvas
+							 id="merge" width="654" height="1000" class="lower-canvas" style="position: absolute; width: 654px; height: 1000px; left: 0px; top: 0px; touch-action: none; user-select: none;"></canvas><canvas
+							 class="upper-canvas " width="654" height="1000" style="position: absolute; width: 654px; height: 1000px; left: 0px; top: 0px; touch-action: none; user-select: none;"></canvas></div>
+					</div>
+					<div class="main-container">
+						<div class="box">
+							<div class="btns">
+								<div class="btn"><button type="button" class="ant-btn ant-btn-primary"><span>复制代码</span></button></div>
+								<div class="btn"><button type="button" class="ant-btn ant-btn-primary"><span>查看代码</span></button></div>
+								<div class="btn"><button type="button" class="ant-btn ant-btn-primary"><span>导出json</span></button></div>
+								<div class="btn"><button type="button" class="ant-btn ant-btn-primary"><span>导入json</span></button></div>
+							</div>
+							<div class="code"></div>
+						</div>
+						<div class="option">
+							<div class="box">
+								<div class="btns">
+									<div class="ant-radio-group ant-radio-group-outline"><label class="ant-radio-button-wrapper"><span class="ant-radio-button"><input
+												 type="radio" class="ant-radio-button-input" value="canvas"><span class="ant-radio-button-inner"></span></span><span>画布</span></label><label
+										 class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"><span class="ant-radio-button ant-radio-button-checked"><input
+												 type="radio" class="ant-radio-button-input" value="text" checked=""><span class="ant-radio-button-inner"></span></span><span>文字</span></label><label
+										 class="ant-radio-button-wrapper"><span class="ant-radio-button"><input type="radio" class="ant-radio-button-input"
+												 value="rect"><span class="ant-radio-button-inner"></span></span><span>矩形</span></label><label class="ant-radio-button-wrapper"><span
+											 class="ant-radio-button"><input type="radio" class="ant-radio-button-input" value="image"><span class="ant-radio-button-inner"></span></span><span>图片</span></label><label
+										 class="ant-radio-button-wrapper"><span class="ant-radio-button"><input type="radio" class="ant-radio-button-input"
+												 value="qrcode"><span class="ant-radio-button-inner"></span></span><span>二维码</span></label></div>
+								</div>
+							</div>
+							<div class="option-li">
+								<div class="row">
+									<div class="h3">文字 </div>
+									<div class="btn"><button type="button" class="ant-btn ant-btn-primary"><span>添 加</span></button></div>
+								</div>
+								<div class="row">
+									<div class="h3">text </div><textarea class="ant-input">别跟我谈感情，谈感情伤钱。</textarea>
+								</div>
+								<div class="row">
+									<div class="h3">width </div><input type="text" class="ant-input" value="200">
+								</div>
+								<div class="row">
+									<div class="h3">maxLines </div><input type="text" class="ant-input" value="2">
+								</div>
+								<div class="row">
+									<div class="h3">lineHeight </div><input type="text" class="ant-input" value="1.3">
+								</div>
+								<div class="row">
+									<div class="h3">left </div><input type="text" class="ant-input" value="0">
+								</div>
+								<div class="row">
+									<div class="h3">top </div><input type="text" class="ant-input" value="250">
+								</div>
+								<div class="row">
+									<div class="h3">color </div><input type="text" class="ant-input" value="#000000">
+								</div>
+								<div class="row">
+									<div class="h3">background </div><input type="text" class="ant-input" value="rgba(0,0,0,0)">
+								</div>
+								<div class="row">
+									<div class="h3">fontSize </div><input type="text" class="ant-input" value="30">
+								</div>
+								<div class="row">
+									<div class="h3">fontWeight </div><input type="text" class="ant-input" value="normal">
+								</div>
+								<div class="row">
+									<div class="h3">textDecoration </div><input type="text" class="ant-input" value="none">
+								</div>
+								<div class="row">
+									<div class="h3">rotate </div><input type="text" class="ant-input" value="0">
+								</div>
+								<div class="row">
+									<div class="h3">borderRadius </div><input type="text" class="ant-input" value="0">
+								</div>
+								<div class="row">
+									<div class="h3">borderWidth </div><input type="text" class="ant-input" value="0">
+								</div>
+								<div class="row">
+									<div class="h3">borderColor </div><input type="text" class="ant-input" value="#000000">
+								</div>
+								<div class="row">
+									<div class="h3">shadow </div><input type="text" class="ant-input" value="">
+								</div>
+								<div class="row">
+									<div class="h3">textStyle </div><input type="text" class="ant-input" value="fill">
+								</div>
+								<div class="row">
+									<div class="h3">textAlign </div><input type="text" class="ant-input" value="left">
+								</div>
+								<div class="row">
+									<div class="h3">fontFamily </div><input type="text" class="ant-input" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="placeholder"></div>
+					<div>
+						<div class="ant-modal-mask ant-modal-mask-hidden"></div>
+						<div tabindex="-1" class="ant-modal-wrap " role="dialog" aria-labelledby="rcDialogTitle0" style="display: none;">
+							<div role="document" class="ant-modal " style="width: 520px;">
+								<div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden;"></div>
+								<div class="ant-modal-content"><button type="button" aria-label="Close" class="ant-modal-close"><span class="ant-modal-close-x"><i
+											 aria-label="icon: close" class="anticon anticon-close ant-modal-close-icon"><svg viewBox="64 64 896 896"
+												 focusable="false" class="" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+													<path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path>
+												</svg></i></span></button>
+									<div class="ant-modal-header">
+										<div class="ant-modal-title" id="rcDialogTitle0">导入代码</div>
+									</div>
+									<div class="ant-modal-body"><textarea placeholder="请将代码复制进来" class="ant-input" style="height: 136px; min-height: 220px; max-height: 136px;"></textarea></div>
+									<div class="ant-modal-footer"><button type="button" class="ant-btn ant-btn-primary"><span>确 定</span></button></div>
+								</div>
+								<div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-save">
+			<input type="button" value="保存png图片" id="savebtn1" />
+			<input type="button" value="保存jpg图片" id="savebtn2" />
+		</div>
+		<script>
+			! function(l) {
+				function e(e) {
+					for (var r, t, n = e[0], o = e[1], u = e[2], i = 0, f = []; i < n.length; i++) t = n[i], p[t] && f.push(p[t][0]),
+						p[t] = 0;
+					for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]);
+					for (s && s(e); f.length;) f.shift()();
+					return c.push.apply(c, u || []), a()
+				}
+
+				function a() {
+					for (var e, r = 0; r < c.length; r++) {
+						for (var t = c[r], n = !0, o = 1; o < t.length; o++) {
+							var u = t[o];
+							0 !== p[u] && (n = !1)
+						}
+						n && (c.splice(r--, 1), e = i(i.s = t[0]))
+					}
+					return e
+				}
+				var t = {},
+					p = {
+						1: 0
+					},
+					c = [];
+
+				function i(e) {
+					if (t[e]) return t[e].exports;
+					var r = t[e] = {
+						i: e,
+						l: !1,
+						exports: {}
+					};
+					return l[e].call(r.exports, r, r.exports, i), r.l = !0, r.exports
+				}
+				i.m = l, i.c = t, i.d = function(e, r, t) {
+					i.o(e, r) || Object.defineProperty(e, r, {
+						enumerable: !0,
+						get: t
+					})
+				}, i.r = function(e) {
+					"undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+						value: "Module"
+					}), Object.defineProperty(e, "__esModule", {
+						value: !0
+					})
+				}, i.t = function(r, e) {
+					if (1 & e && (r = i(r)), 8 & e) return r;
+					if (4 & e && "object" == typeof r && r && r.__esModule) return r;
+					var t = Object.create(null);
+					if (i.r(t), Object.defineProperty(t, "default", {
+							enumerable: !0,
+							value: r
+						}), 2 & e && "string" != typeof r)
+						for (var n in r) i.d(t, n, function(e) {
+							return r[e]
+						}.bind(null, n));
+					return t
+				}, i.n = function(e) {
+					var r = e && e.__esModule ? function() {
+						return e.default
+					} : function() {
+						return e
+					};
+					return i.d(r, "a", r), r
+				}, i.o = function(e, r) {
+					return Object.prototype.hasOwnProperty.call(e, r)
+				}, i.p = "/painter-custom-poster/";
+				var r = window.webpackJsonp = window.webpackJsonp || [],
+					n = r.push.bind(r);
+				r.push = e, r = r.slice();
+				for (var o = 0; o < r.length; o++) e(r[o]);
+				var s = n;
+				a()
+			}([])
+		</script>
+		<script src="js/2.ebae7f85.chunk.js"></script>
+		<script src="js/main.9765f989.chunk.js"></script>
+		<script src="js/bianjisave.js"></script>
+		<textarea style="letter-spacing:normal;line-height:21px;padding-top:4px;padding-bottom:4px;font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;font-weight:400;font-size:14px;font-variant:tabular-nums;text-rendering:auto;text-transform:none;width:472px;text-indent:0px;padding-left:11px;padding-right:11px;border-width:1px;box-sizing:border-box;
+  min-height:0 !important;
+  max-height:none !important;
+  height:0 !important;
+  visibility:hidden !important;
+  overflow:hidden !important;
+  position:absolute !important;
+  z-index:-1000 !important;
+  top:0 !important;
+  right:0 !important
+"></textarea>
+	</body>
+</html>

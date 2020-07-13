@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>playbill</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/imdex.css" rel="stylesheet" />
+	<link href="css/login.css" rel="stylesheet"/>
+    <link rel="shortcut icon"  href="img/favicon.ico"/>
+	
+  </head>
+  <body>
+	<!-- 头部 -->
+	<header id="lk_header">
+		<nav class="navbar navbar-default navbar-static-top navbar-zy">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="logo" width="180" height="60"/>
+			  </a>
+		    </div>
+		
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		       <ul class="nav navbar-nav">
+				    <li role="presentation" class="active" id="home"><a href="#home">首页</a></li>
+				    <li role="presentation" id="modeshop"><a href="#modeshop">模板商城</a></li>
+				    <li role="presentation" id="perdonalcenter"><a href="#messages">个人中心</a></li>
+		        </ul>
+				<form class="navbar-form navbar-left" role="search" action="index.html">
+				  <div class="form-group">
+				    <input type="text" class="form-control" placeholder="Search" required="required">
+				  </div>
+				  <button type="submit" class="btn btn-default">搜索</button>
+				</form>
+		      <ul class="nav navbar-nav navbar-right">
+				<li role="presentation" id="header-login"><a href="#">登录/注册</a></li>
+		      </ul>
+			  <!-- 登陆后显示 -->
+			  <ul class="nav navbar-nav navbar-right navbar-right-login">
+				<li role="presentation">
+				<svg class="bi bi-person-check-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" clip-rule="evenodd"/>
+				</svg>
+				</li>
+			  	<li role="presentation"><input type="text" readonly="readonly"/></li>
+			  </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<!-- 轮播图 -->
+	<div class="shouye">
+	<section id="lk_carousel" class="carousel slide" data-ride="carousel">
+		  <!-- 指示器 -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#lk_carousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#lk_carousel" data-slide-to="1"></li>
+		    <li data-target="#lk_carousel" data-slide-to="2"></li>
+			<li data-target="#lk_carousel" data-slide-to="3"></li>
+		  </ol>
+		
+		  <!-- 内容-->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="img/4.jpg" alt="">
+		    </div>
+		    <div class="item">
+		       <img src="img/6.jpg" alt="">
+		    </div>
+			<div class="item">
+			   <img src="img/8.jpg" alt="">
+			</div>
+			<div class="item">
+			   <img src="img/7.jpg" alt="">
+			</div>
+		  </div>
+		
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#lk_carousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#lk_carousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+	</section>
+	<!-- 关于我们 -->
+	<section id="lk_about">
+		<div class="title text-center">
+			<h2><strong>简单快捷的做海报</strong></h2>
+		</div>
+		<div class="container">
+			<p class="lk_about-goods">涵盖各行各业的精选背景素材，同时具备海量的热门模板，您可以根据您的需求选择您需要的海报模板，替换其中的文字或者图标就能生成您最终想要的模板，没错，设计海报就是如此的简单，快来生成您自己的宣传海报吧。</p>
+		</div>
+		<div class="container lk_about-container">
+			<div class="row">
+				<div class="col-sm-4 lk_about-h1">
+					<div>1 选择模板</div>
+					<p>海量模板供您选择，均可在线编辑</p>
+				</div>
+				<div class="col-sm-4 lk_about-h1">
+					<div>2 替换内容</div>
+					<p>选择模板，替换您需要的内容</p>
+				</div>
+				<div class="col-sm-4 lk_about-h1">
+					<div>3 生成海报</div>
+					<p>完成内容的修改便可保存生成海报</p>
+				</div>
+			</div>
+		</div>
+		<div class="lk_about-button">
+			<a href="bianji.html"><button type="button" class="btn btn-primary btn-lg">赶快使用</button></a>
+		</div>
+	</section>
+	<!-- 海量模板 -->
+	<section id="lk_moremode">
+		<div class="container">
+			<div class="lk_moremode-tetle">
+				<h2 class="text-center"><strong>海量模板---任你挑选</strong></h2>
+				<p>你想要的这里都有哦~</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="bianji.html"><img src="img/example1.a4fb1911.jpg" /></a>
+					<p>季节类海报秋分</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="bianji.html"><img src="img/example2.5d1bd224.jpg" /></a>
+					<p>文学类海报古诗</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="bianji.html"><img src="img/example3.f37953c1.jpg"/></a>
+					<p>节假日宣传海报国庆节</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="bianji.html"><img src="img/example4.4706abbd.jpg" /></a>
+					<p>日常生活类海报问候</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="bianji.html"><img src="img/mode1.jpg" /></a>
+					<p>厚重色彩庄重庆典</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="bianji.html"><img src="img/mode2.jpg" /></a>
+					<p>真实宣传商用招聘</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="bianji.html"><img src="img/mode3.jpg" /></a>
+					<p>商用出租房屋宣传</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="bianji.html"><img src="img/mode4.jpg" /></a>
+					<p>艺术招生宣传文艺</p>
+				</div>
+			</div>
+			<div class="lk_moremode-buttom">
+				<a href="bianji.html"><button class="btn">查看更多</button></a><br><br><br><br>
+			</div>
+		</div>
+	</section>
+	<!-- 静止背景 -->
+	<section id="lk_flexbg">
+		<div class="cover">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-xs-4">
+						<h1>666+</h1>
+						<p>图片模板666个</p>
+					</div>
+					<div class="col-xs-4">
+						<h1>6，666+</h1>
+						<p>每日更新精品模板</p>
+					</div>
+					<div class="col-xs-4">
+						<h1>66,666+</h1>
+						<p>用户选择</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 友情链接 -->
+	<footer id="lk_footer">
+		<div class="container goods1">
+			<label>觉得心动？现在用不到？按 <input type="text" readonly="readonly" value="Ctrl"/> + <input type="text" readonly="readonly" value="D"/> 收藏我们，万一有用呢？</label>
+		</div>
+		<div class="container goods2">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="img/logo1.png" class="goods2-logo"/>
+					<!-- <div class="right1"></div> -->
+				</div>
+				<div class="col-sm-4">
+					<h4>友情链接，二维码制作</h4>
+					<img src="img/weixin.jpg"/>
+					<!-- <div class="right"></div> -->
+				</div>
+				<div class="col-sm-4">
+					<input type="text" readonly="readonly" value="联系客服" class="goods2-input"/>
+					<p>客服电话：1234365464<br>商务合作QQ：234453452<br>有问题或者需求欢迎联系我们哦</p>
+				</div>
+			</div>
+			<div class="hr"></div>
+		</div>
+	</footer>
+	</div>
+	<!-- 模板中心 -->
+	<section class="modeshop">
+		<div class="container">
+			<div class="row">
+				<div class="modeshop-title">热门分类</div>
+			  <div class="col-xs-6 col-md-3">
+			    <a href="bianji.html" class="thumbnail modeshop-a">
+			      <img src="img/example2.5d1bd224.jpg" alt="">
+			    </a>
+				<div class="modeshop-goods">简历海报</div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <a href="bianji.html" class="thumbnail modeshop-a">
+			      <img src="img/example3.f37953c1.jpg" alt="">
+			    </a>
+				<div class="modeshop-goods">假期海报</div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <a href="bianji.html" class="thumbnail modeshop-a">
+			      <img src="img/mode4.jpg" alt="">
+			    </a>
+				<div class="modeshop-goods">钢琴招生</div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <a href="bianji.html" class="thumbnail modeshop-a">
+			      <img src="img/mode2.jpg" alt="">
+			    </a>
+				<div class="modeshop-goods">学校招生</div>
+			  </div>
+			  <!-- 第二列 -->
+			<div class="row">
+				<div class="modeshop-title">招生海报</div>
+			  <div class="col-xs-6 col-md-3">
+			    <a href="bianji.html" class="thumbnail modeshop-a">
+			      <img src="img/mode1.jpg" alt="">
+			    </a>
+				<div class="modeshop-goods">简历海报</div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <a href="bianji.html" class="thumbnail modeshop-a">
+			      <img src="img/mode3.jpg" alt="">
+			    </a>
+				<div class="modeshop-goods">假期海报</div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <a href="bianji.html" class="thumbnail modeshop-a">
+			      <img src="img/mode4.jpg" alt="">
+			    </a>
+				<div class="modeshop-goods">招聘海报</div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <a href="bianji.html" class="thumbnail modeshop-a">
+			      <img src="img/haibao.jpg" alt="">
+			    </a>
+				<div class="modeshop-goods">招生海报</div>
+			  </div>
+		</div>
+	</section>
+	<!-- 个人中心 -->
+	<section class="perdonalcenter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 zhanghao-content">
+					<div class="zhanghao-geren"><b>
+							个人中心</b></div>
+					<div class="zhanghao-img">
+						<img src="img/bgbanji1.png" class="img">
+					</div>
+					<div class="form-center">
+					<div class="zhanghao-nicheng">
+						<label><b>昵称:</b></label>
+						<input readonly="readonly" placeholder="张三" />
+					</div>
+					<div class="zhanghao-xingbie">
+						<label><b>性别:</b></label>
+						<input readonly="readonly" placeholder="男" />
+					</div>
+					<div class="zhanghao-chengshi">
+						<label><b>城市: </b></label>
+						<input readonly="readonly" placeholder="长沙">
+					</div>
+					<div class="zhanghao-button">
+						<a href="#"><button>修改</button></a>
+					</div>
+					</div>
+				</div>
+				<div class="col-sm-6 xiugai-content">
+					<form>
+					<div class="xiugai-nicheng">
+						<label><b>昵称: </b></label>
+						<input id="nicheng" autocomplete="off" placeholder="请输入昵称">
+					</div>
+					<div class="xiugai-xingbie">
+						<label><b>性别: </b></label>
+						<span class="i">
+							<input name="sex" type="radio" value="男">男</input>
+						</span>
+						<span class="ii">
+							<input name="sex" type="radio" value="女">女</input>
+						</span>
+					</div>
+					<div class="xiugai-chengshi">
+						<label><b>城市: </b></label>
+						<input autocomplete="off" placeholder="请输入城市">
+					</div>
+					<div class="xiugai-button">
+						<span class="x">
+							<button>取消</button>
+						</span>
+						<button><a href="#">保存</a></button>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<p class="perdonalcenter-p">我的作品</p>
+		<ul class="perdonalcenter-muban">
+			<li>
+				<div class="zuopin-1">
+					<img src="img/example3.f37953c1.jpg" />
+					<img src="img/example3.f37953c1.jpg" class="img" />
+					<div class="cover">
+						<a href="bianji.html"><span>编辑</span></a>
+					</div>
+					<div class="zuopin-1-bottom">
+						<h4>海报自动生成系统</h4>
+						<hr width="100%" size="3px" color="#CFDFF3"/>
+						<h5>手机海报</h5>
+						<ul class="bottom">
+							<li>应用</li>
+							<li>复制</li>
+							<li>删除</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="zuopin-1">
+					<img src="img/example3.f37953c1.jpg" />
+					<img src="img/example3.f37953c1.jpg" class="img" />
+					<div class="cover">
+						<a href="bianji.html"><span>编辑</span></a>
+					</div>
+					<div class="zuopin-1-bottom">
+						<h4>海报自动生成系统</h4>
+						<hr width="100%" size="3px" color="#CFDFF3"/>
+						<h5>手机海报</h5>
+						<ul class="bottom">
+							<li>应用</li>
+							<li>复制</li>
+							<li>删除</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="zuopin-1">
+					<img src="img/example3.f37953c1.jpg" />
+					<img src="img/example3.f37953c1.jpg" class="img" />
+					<div class="cover">
+						<a href="bianji.html"><span>编辑</span></a>
+					</div>
+					<div class="zuopin-1-bottom">
+						<h4>海报自动生成系统</h4>
+						<hr width="100%" size="3px" color="#CFDFF3"/>
+						<h5>手机海报</h5>
+						<ul class="bottom">
+							<li>应用</li>
+							<li>复制</li>
+							<li>删除</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+<!-- 登录界面 -->
+	<div class="login-cover">
+		<form id="regloginform" name="regloginform" action="">
+			<div class=" Box">
+			<h2>login</h2>
+			<div class="input-group">
+				<span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+				<input type="email" id="username" name="username" class="form-control" required="required" placeholder="Username"
+				 aria-describedby="basic-addon1">
+			</div>
+				
+			<div class="input-group input-group1">
+				<span class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1"></span>
+				<input type="password" id="pwd" name="pwd" class="form-control" required="required" placeholder="Password"
+				 aria-describedby="basic-addon1">
+			</div>
+			<div class="login-cover-btn">
+				<button class="btn" id="login-btn" onClick="loginbtn(this.form)">登录</button>
+				<button class="btn btn-1" id="reg" onClick="regbtn(this.form)">注册</button>
+			</div>
+			
+		</form>
+		
+		<div class="logo">
+			<img src="img/logo.png" alt=""/>
+		</div>
+		<svg class="bi bi-x" width="2em" height="2em" viewBox="0 0 16 16" >
+		  <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" clip-rule="evenodd"/>
+/>
+		  <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" clip-rule="evenodd" />
+		</svg>
+	</div>
+	
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/myjs.js"></script>
+  </body>
+</html>
